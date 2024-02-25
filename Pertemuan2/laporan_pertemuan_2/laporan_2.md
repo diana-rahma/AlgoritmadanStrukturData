@@ -1,4 +1,9 @@
 # Praktikum Pertemuan 2 (Object)
+Nama : Diana Rahmawati
+
+NIM : 2341720162
+
+Kelas : TI - 1H
 
 ## 2.1 Percobaan 1: Deklarasi Class, Atribut dan Method
 <img src="percobaan1.png">
@@ -6,7 +11,7 @@
 ### 2.1.3 Pertanyaan
 1. Sebutkan dua karakteristik class atau object!
 
-    **Jawab** : Karakteristik dari class/object yaitu memililki atribut dan method.
+    **Jawab** : Karakteristik dari class/object yaitu memililki atribut dan behavior/method.
 
 2. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class 
 Buku? Sebutkan apa saja atributnya!
@@ -99,6 +104,7 @@ hitungDiskon(), dan hitungHargaBayar().
 2. Buat program berdasarkan class Dragon
 
     **Jawab** : 
+<img src="tugas2.png">
 
 
 

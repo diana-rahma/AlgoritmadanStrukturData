@@ -1,13 +1,14 @@
 package Pertemuan2;
 import java.util.Scanner;
 
-public class Dragon {
+public class Dragon08 {
     int x, y, width, height;
 
-    public Dragon() {
+    public Dragon08() {
 
     }
-    Dragon(int x, int y, int width, int height){
+    
+    Dragon08(int x, int y, int width, int height){
         this.x = x;
         this.y = y;
         this.width = width;

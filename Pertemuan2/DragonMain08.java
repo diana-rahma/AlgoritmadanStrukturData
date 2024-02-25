@@ -1,9 +1,9 @@
 package Pertemuan2;
 import java.util.Scanner;
 
-public class DragonMain {
+public class DragonMain08 {
     public static void main(String[] args) {
-        Dragon drgn = new Dragon(10, 5, 10, 12);
+        Dragon08 drgn = new Dragon08(1, 5, 10, 12);
 
         String langkah;
         Scanner sc = new Scanner(System.in);
@@ -32,7 +32,7 @@ public class DragonMain {
         }
 
         drgn.printPosition();
-        // drgn.detectCollision(0,0);
+        drgn.detectCollision(0,0);
 
         
 

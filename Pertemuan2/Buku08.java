@@ -5,14 +5,14 @@ public class Buku08 {
     int halaman, stok, harga, total, bayar, diskon;
 
     void tampilInformasi(){
-        System.out.println("Judul: " + judul);
-        System.out.println("Pengarang: " + pengarang);
-        System.out.println("Jumlah halaman: "+ halaman);
-        System.out.println("Sisa stok: " + stok);
-        System.out.println("Harga: Rp "+ harga);
-        System.out.println("Harga Total: " + total);
-        System.out.println("Diskon sebesar : Rp" + diskon);
-        System.out.println("Harga bayar setelah dikurangi diskon : Rp " + bayar);
+        System.out.println("Judul                                   : " + judul);
+        System.out.println("Pengarang                               : " + pengarang);
+        System.out.println("Jumlah halaman                          : "+ halaman);
+        System.out.println("Sisa stok                               : " + stok);
+        System.out.println("Harga                                   : Rp "+ harga);
+        System.out.println("Harga Total                             : Rp " + total);
+        System.out.println("Diskon sebesar                          : Rp " + diskon);
+        System.out.println("Harga bayar setelah dikurangi diskon    : Rp " + bayar);
     }
 
     void terjual(int jml){
@@ -29,11 +29,12 @@ public class Buku08 {
         harga = hrg;
     }
 
-    void hitungHargaTotal(int jml){
+    int hitungHargaTotal(int jml){
         total = harga * jml;
+        return total;
     }
 
-    void hitungDiskon(){
+    int hitungDiskon(){
         if(total > 150000){
             diskon += total * 0.12;
         } else if (total > 75000 && total <= 150000) {
@@ -41,10 +42,12 @@ public class Buku08 {
         } else {
             System.out.println("Tidak ada diskon");
         }
+        return diskon;
     }
 
-    void hitungHargaBayar(){
+    int hitungHargaBayar(){
         bayar = total - diskon;
+        return bayar;
     }
 
     public Buku08(){

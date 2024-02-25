@@ -24,8 +24,12 @@ public class BukuMain08 {
         bk2.hitungHargaBayar();
         bk2.tampilInformasi();
 
-        // Buku08 bukuDiana = new Buku08("Hujan","Tere Liye", 150, 20, 60000);
-        // bukuDiana.tampilInformasi();
+        Buku08 bukuDiana = new Buku08("Hujan","Tere Liye", 150, 20, 60000);
+        bukuDiana.terjual(6);
+        bukuDiana.hitungHargaTotal(6);
+        bukuDiana.hitungDiskon();
+        bukuDiana.hitungHargaBayar();
+        bukuDiana.tampilInformasi();
 
     }
 }

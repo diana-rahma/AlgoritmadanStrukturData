@@ -33,14 +33,5 @@ public class DragonMain08 {
 
         drgn.printPosition();
         drgn.detectCollision(0,0);
-
-        
-
-        // drgn.moveRight();
-        // drgn.moveLeft();
-        // drgn.moveUp();
-        // drgn.moveDown();
-        // drgn.printPosition();
-        // drgn.detectCollision(0,0);
     }
 }

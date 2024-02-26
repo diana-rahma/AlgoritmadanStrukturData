@@ -17,34 +17,30 @@ public class Dragon08 {
 
     void moveLeft() {
         x -=1 ;
-        detectCollision(x, y);
-        // if(x < 0 || x > width){
-        //     detectCollision(x, y);
-        // }
+        if(x < 0 || x > width){
+            detectCollision(x, y);
+        }
     }
 
     void moveRight(){
         x += 1;
-        detectCollision(x, y);
-        // if(x < 0 || x > width){
-        //     detectCollision(x, y);
-        // }
+        if(x < 0 || x > width){
+            detectCollision(x, y);
+        }
     }
 
     void moveUp(){
         y -= 1;
-        detectCollision(x, y);
-        // if(y < 0 || y > height){
-        //     detectCollision(x, y);
-        // }
+        if(y < 0 || y > height){
+            detectCollision(x, y);
+        }
     }
 
     void moveDown(){
         y += 1;
-        detectCollision(x, y);
-        // if(y < 0 || y > height){
-        //     detectCollision(x, y);
-        // }
+        if(y < 0 || y > height){
+            detectCollision(x, y);
+        }
     }
 
     void printPosition() {
@@ -52,9 +48,9 @@ public class Dragon08 {
     }
 
     void detectCollision(int x, int y) {
-        if ( x < 0 || x > width || y < 0 || y > height) {
+        // if ( x < 0 || x > width || y < 0 || y > height) {
             System.out.println("Game Over!");
-        }
+        // }
     }
 
 }

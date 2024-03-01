@@ -74,11 +74,13 @@ pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
 1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh
 
 **Jawab** : Iya bisa, sebuah class bisa memiliki lebih dari 1 konstuktor dan instansiasi objek akan menjalankan konstruktor dengan parameter yang sesuai dengan jumlah dan tipe datanya. 
+<br>
 <img src="soal1_4.png">
 <br>
 2. Jika diketahui terdapat class Segitiga seperti berikut ini:
 Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi
 **Jawab** :
+<br>
 <img src="konstruktor_segitiga.png">
 <br>
 3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan library Math pada Java untuk mengkalkulasi sisi miring)
@@ -93,10 +95,12 @@ sgArray ke-2 alas: 15, tinggi: 6
 sgArray ke-3 alas: 25, tinggi: 10
 
 **Jawab** :
+<br>
 <img src="isi_Array_segitiga.png">
 <br>
 5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling().
     **Jawab** :
+<br>
 <img src="perulangan_segitiga.png">
     hasil output :
 <img src="output_segitiga.png">

@@ -12,24 +12,24 @@ Kelas : TI - 1H
 
 ### 3.2.3 Pertanyaan
 1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki atribut dan sekaligus method?Jelaskan!
-
+<br>
     **Jawab**: Tidak, sebuah class yang akan dibuat array of object tidak harus memilki method namun harus memiliki atribut. Seperti pada kode program percobaan 1 dimana didalam class hanya atribut tanpa method apapun.
 <br> 
 2. Apakah class PersegiPanjang memiliki konstruktor?Jika tidak, kenapa dilakukan pemanggilan 
 konstruktur pada baris program berikut :
-
+<br>
     **Jawab** : Class PersegiPanjang tidak memiliki konstruktor. Ketika dilakukan instansiasi objek maka akan memanggil konstruktor default yang tidak memilki parameter. 
 <br> 
 3. Apa yang dimaksud dengan kode berikut ini:
-
+<br>
     **Jawab** : Kode tersebut merupakan pendeklarasian array PersegiPanjang dengan nama ppArray yang dapat menampung 3 buah elemen/objek PersegiPanjang
 <br> 
 4. Apa yang dimaksud dengan kode berikut ini:
-
+<br>
     **Jawab** : Kode tersebut adalah instansiasi dari objek PersegiPanjang yang akan disimpan dalam ppArray index. Objek tersebut mendefinisikan atribut panjang dan lebar dimana panjangnya 80 dan lebarnya 40;
 <br> 
 5. Mengapa class main dan juga class PersegiPanjang dipisahkan pada uji coba 3.2?
-
+<br>
     **Jawab**: Karena pemisahan main class merupakan praktik terbaik dalam konsep PBO dimana setiap object akan dipisah dan diinstansiasi pada fungsi main yang pertama kali dipanggil saat kode dijalankan. Hal ini juga dapat memudahkan dalam membaca kode program. 
 
 ## 3.3 Percobaan 2: Menerima Input Isian Array Menggunakan Looping.
@@ -39,21 +39,21 @@ konstruktur pada baris program berikut :
 ### 3.3.3 Pertanyaan 
 
 1. Apakah array of object dapat diimplementasikan pada array 2 Dimensi?
-
+<br>
     **Jawab** : Iya, bisa
 <br> 
 2. Jika jawaban soal no satu iya, berikan contohnya! Jika tidak, jelaskan!
-
+<br>
     **Jawab** : Contohnya adalah pengelompokan dosen berdasarkan ruangan, artinya array dimensi 1 merupakan jumlah ruang dosen, kemudian array dimensi 2 merupakan jumlah dosen pada setiap ruang.
     Dosen[][] arrayDosen = new Dosen[7][30];
 <br> 
 3. Jika diketahui terdapat class Persegi yang memiliki atribut sisi bertipe integer, maka kode 
 dibawah ini akan memunculkan error saat dijalankan. Mengapa?
-
+<br>
     **Jawab** : Karena tidak ada instansiasi objek Persegi pada indeks ke-5
 <br> 
 4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!
-
+<br>
     **Jawab** : 
 <img src="modif_inputan.png">
     hasil output:
@@ -61,7 +61,7 @@ dibawah ini akan memunculkan error saat dijalankan. Mengapa?
 <br> 
 5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan 
 pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
-
+<br>
     **Jawab** : Boleh saja terjadi duplikasi instansiasi objek, karena setiap objek yang diinstansiasi akan merepresentasikan dirinya masing-masing.
 
 
@@ -72,19 +72,20 @@ pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
 ### 3.4.3 Pertanyaan
 <br>
 1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh
-
+<br>
 **Jawab** : Iya bisa, sebuah class bisa memiliki lebih dari 1 konstuktor dan instansiasi objek akan menjalankan konstruktor dengan parameter yang sesuai dengan jumlah dan tipe datanya. 
 <br>
 <img src="soal1_4.png">
 <br>
 2. Jika diketahui terdapat class Segitiga seperti berikut ini:
 Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi
+<br>
 **Jawab** :
 <br>
 <img src="konstruktor_segitiga.png">
 <br>
 3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan library Math pada Java untuk mengkalkulasi sisi miring)
-
+<br>
 **Jawab** : 
 <img src="method_segitiga.png">
 <br>
@@ -93,12 +94,13 @@ sgArray ke-0 alas: 10, tinggi: 4
 sgArray ke-1 alas: 20, tinggi: 10
 sgArray ke-2 alas: 15, tinggi: 6
 sgArray ke-3 alas: 25, tinggi: 10
-
+<br>
 **Jawab** :
 <br>
 <img src="isi_Array_segitiga.png">
 <br>
 5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling().
+<br>
     **Jawab** :
 <br>
 <img src="perulangan_segitiga.png">

@@ -55,8 +55,11 @@ Jawab : Karena tidak ada instansiasi objek Persegi pada indeks ke-5
 4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!
 
 Jawab : 
+
 <img src="modif_inputan.png">
-    hasil output:
+
+hasil output:
+
 <img src="hasil_modif_inputan.png">
  
 5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan 

@@ -40,9 +40,9 @@ public class BangunRuang {
         }
 
         for(int n = 0; n < l; n++){
-            System.out.println("Kerucut ke-" + i + ", Luas Permukaan: " + limas[n].hitungLuasPermukaanLimas() + ", Volume: " + limas[n].hitungVolumeLimas());
+            System.out.println("Limas Segi Empat ke-" + i + ", Luas Permukaan: " + limas[n].hitungLuasPermukaanLimas() + ", Volume: " + limas[n].hitungVolumeLimas());
         }
-        System.out.println("============================================================");
+        System.out.println("============================================================================");
 
         System.out.println("==================== Hitung Bangun Ruang Bola ====================");
         System.out.print("Masukkan jumlah bola: ");

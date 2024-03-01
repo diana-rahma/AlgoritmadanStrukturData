@@ -3,7 +3,6 @@ package Pertemuan3;
 public class Segitiga {
     public int alas;
     public int tinggi;
-    public double sisiMiring;
 
     public Segitiga(int a, int t){
         alas = a;
@@ -13,13 +12,9 @@ public class Segitiga {
     double hitungLuas(){
         return alas * tinggi / 2;
     }
-
-    double cariSisiMiring(){
-        sisiMiring = Math.sqrt((alas * alas)+ (tinggi * tinggi));
-        return sisiMiring;
-    }
-
+    
     double hitungKeliling(){
+        double sisiMiring = Math.sqrt((alas * alas) + (tinggi * tinggi));
         return alas + tinggi + sisiMiring;
     }
 }

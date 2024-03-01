@@ -4,13 +4,20 @@ public class LatPrak1_Limas {
     public double panjangSisiAlas;
     public double tinggiLimas;
     public double sisiMiring;
+    public double luasSegitiga;
 
     void hitungSisiMiring(){
         sisiMiring = Math.sqrt((panjangSisiAlas/2 * panjangSisiAlas/2) + (tinggiLimas * tinggiLimas));
     }
 
+    void luasSegitiga(){
+        hitungSisiMiring();
+        luasSegitiga = sisiMiring * panjangSisiAlas / 2;
+    }
+
     double hitungLuasPermukaanLimas(){
-        return (panjangSisiAlas * panjangSisiAlas) + (4 * (sisiMiring * panjangSisiAlas / 2));
+        luasSegitiga();
+        return panjangSisiAlas * panjangSisiAlas + (4 * luasSegitiga);
     }
 
     double hitungVolumeLimas(){

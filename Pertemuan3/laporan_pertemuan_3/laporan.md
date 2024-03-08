@@ -118,8 +118,8 @@ Jawab :
 
 2. Program untuk menampilkan informasi mahasiswa
 
-<img src="latprak1.png">
+<img src="latprak2.png">
 
 3. Program untuk menampilkan informasi mahasiswa yang bisa digunakan untuk menghitung rata-rata IPK, serta menampilkan data mahasiswa dengan IPK terbesar!
 
-<img src="latprak1.png">
+<img src="latprak3.png">

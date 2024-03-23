@@ -3,6 +3,12 @@ package Pertemuan5;
 public class Pangkat08 {
     public int nilai, pangkat;
 
+    // pertanyaan 3
+    Pangkat08 (int nilai, int pangkat) {
+        this.nilai = nilai;
+        this.pangkat = pangkat;
+    }
+
     public int pangkatBF(int a, int n){
         int hasil = 1;
         for(int i = 0; i < n; i++){

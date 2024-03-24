@@ -1,6 +1,8 @@
 # Laporan Pertemuan 5 (Brute Force dan Divide Conquer)
-Nama    : Diana Rahmawati
+Nama    : Diana Rahmawati 
+<br>
 NIM     : 2341720162
+<br>
 Kelas   : TI - 1H
 
 ### 4.2 Menghitung Nilai Faktorial dengan Algoritma Brute Force dan Divide and Conquer
@@ -53,9 +55,11 @@ for?Buktikan!
     <img src="konstruktor (1).png">
     <br>
     - Main
+    <br>
     <img src="mainkonstruktor.png">
     <br>
     - Output
+    <br>
     <img src="showkonstruktor.png">
 
 4. Tambahkan menu agar salah satu method yang terpilih saja yang akan dijalankan menggunakan switch-case!
@@ -66,6 +70,7 @@ for?Buktikan!
     <img src="menu.png">
     <br>
     - Output
+    <br>
     <img src="showmenu.png">
 
 
@@ -88,6 +93,7 @@ for?Buktikan!
     <img src="mainsum.png">
     <br>
     - Output
+    <br>
     <img src="sum3.png">
 
 

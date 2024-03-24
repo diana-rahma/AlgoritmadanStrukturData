@@ -51,8 +51,10 @@ for?Buktikan!
 
     - Konstruktor
     <img src="konstruktor (1).png">
+    <br>
     - Main
     <img src="mainkonstruktor.png">
+    <br>
     - Output
     <img src="showkonstruktor.png">
 
@@ -62,6 +64,7 @@ for?Buktikan!
 
     - Main
     <img src="menu.png">
+    <br>
     - Output
     <img src="showmenu.png">
 
@@ -83,6 +86,7 @@ for?Buktikan!
     **Jawab:**
     - Main
     <img src="mainsum.png">
+    <br>
     - Output
     <img src="sum3.png">
 

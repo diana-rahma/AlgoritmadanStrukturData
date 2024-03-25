@@ -41,7 +41,7 @@ public class HotelService {
                 if(rooms[j].bintang > rooms[j - 1].bintang){
                     Hotel tmp = rooms[j];
                     rooms[j] = rooms[j-1];
-                    rooms[j+1] = tmp;
+                    rooms[j-1] = tmp;
                 }
             }
         }

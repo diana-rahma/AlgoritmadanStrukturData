@@ -7,6 +7,8 @@ NIM     : 2341720162
 
 ### 5.2 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Bubble Sort
 
+#### 5.2.2 Verifikasi Hasil Percobaan
+
 <img src="data_awal.png">
 <br>
 <img src="bubble.png">
@@ -25,6 +27,8 @@ d. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i aka
 
 ### 5.3 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Selection Sort
 
+#### 5.3.2. Verifikasi Hasil Percobaan
+
 <img src="data_awal.png">
 <br>
 <img src="selection.png">
@@ -34,6 +38,8 @@ Di dalam method selection sort, terdapat baris program seperti di bawah ini:
 Untuk apakah proses tersebut, jelaskan
 
 ### 5.4 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Insertion Sort
+
+#### 5.4.2 Verifikasi Hasil Percobaan
 
 <img src="data_awal.png">
 <br>

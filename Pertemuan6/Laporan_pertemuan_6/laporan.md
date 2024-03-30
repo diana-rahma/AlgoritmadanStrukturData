@@ -14,24 +14,24 @@ NIM     : 2341720162
 <img src="bubble.png">
 
 #### 5.2.3 Pertanyaan
-1. Terdapat di method apakah proses bubble sort? 
+1. Terdapat di method apakah proses bubble sort? <br>
     Jawab: Terdapat pada method bubbleSort()
 2. Di dalam method bubbleSort(), terdapat baris program seperti di bawah ini:
 <img src="soal2_5.2.3.png">
-Untuk apakah proses tersebut?
+Untuk apakah proses tersebut? <br>
     Jawab: Proses ini digunakan untuk melakukan pengecekan nilai IPK pada elemen listMhs[j] dibandingkan dengan nilai IPK elemen sebelumnya listMhs[j-1]. Jika nilai IPK elemen listMhs[j] lebih besar dari listMhs[j-1] maka akan dilakukan swap yang dibantu variabel tmp sebagai penampung.
 <br>
 3. Perhatikan perulangan di dalam bubbleSort() di bawah ini:
 <img src="soal3_5.2.3.png">
-a. Apakah perbedaan antara kegunaan perulangan i dan perulangan j? 
+a. Apakah perbedaan antara kegunaan perulangan i dan perulangan j? <br>
    Jawab: 
     Perulangan i = digunakan untuk mengulang sepanjang elemen listMhs dikurang 1.
     Perulangan j = digunakan untuk membandingkan elemen indeks j dengan elemen indeks j-i. Pada tahap ini akan terjadi proses swap. <br>
-b. Mengapa syarat dari perulangan i adalah i<listMhs.length-1> ?
+b. Mengapa syarat dari perulangan i adalah i<listMhs.length-1> ? <br>
    Jawab: Karena i digunakan sebagai patokan tahap sorting yang dimana dilakukan sebanyak - n kali dari jumlah elemen yang ada. Jadi karena i dimulai dari 0 maka jumlah elemen listMhs dikurangi 1 agar menyesuaikan dengan index array. <br>
-c. Mengapa syarat dari perulangan j adalah j<listMhs.length-i> ?
+c. Mengapa syarat dari perulangan j adalah j<listMhs.length-i> ? <br>
    Jawab: Digunakan untuk memastikan bahwa perulangan tidak mengulang elemen di luar batas array listMhs.
-d. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?
+d. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh? <br>
    Jawab: Perulangan i akan dilakukan sebanyak 49 kali. 
     Sn = n/2 (2a + (n-1)b)
     Sn = 49/2 (2*1 + (49-1) * 1)
@@ -51,7 +51,7 @@ d. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i aka
 
 #### 5.3.3. Pertanyaan
 Di dalam method selection sort, terdapat baris program seperti di bawah ini:
-<img src="soal_5.3.3.png">
+<img src="soal_5.3.3.png"> <br>
 Untuk apakah proses tersebut, jelaskan! <br>
    Jawab: Proses ini digunakan untuk mencari nilai terkecil sebelah kanan dari index i yang kemudian disimpan pada variabel idxMin
 

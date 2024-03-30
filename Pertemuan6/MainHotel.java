@@ -20,34 +20,26 @@ public class MainHotel {
         hServ.tampilAll();
 
         System.out.println("-------- Pilihan Sorting --------");
-        System.out.println("1. Sorting harga bubble sort");
-        System.out.println("2. Sorting bintang bubble sort");
-        System.out.println("3. Sorting harga selection sort");
-        System.out.println("4. Sorting bintang selection sort");
-        System.out.print("Pilih menu 1 - 4: ");
+        System.out.println("1. Sorting harga");
+        System.out.println("2. Sorting bintang");
+        System.out.print("Pilih menu 1 / 2: ");
         int menu = sc.nextInt();
 
         switch (menu) {
             case 1:
-                System.out.println("------------ Data Setelah sorting asc berdasarkan harga ------------");
+                System.out.println("------------ Data harga setelah sorting asc menggunakan bubble sort ------------");
                 hServ.bubbleSortHarga();
                 hServ.tampilAll();
-                break;
-
-            case 2:
-                System.out.println("------------ Data setelah sorting desc berdasarkan bintang ------------");
-                hServ.bubbleSortBintang();
-                hServ.tampilAll();
-                break;
-
-            case 3:
-                System.out.println("------------ Data setelah sorting asc berdasarkan harga ------------");
+                System.out.println("------------ Data harga setelah sorting asc menggunakan selection sort ------------");
                 hServ.selectionSortHarga();
                 hServ.tampilAll();
                 break;
 
-            case 4:
-                System.out.println("------------ Data setelah sorting desc berdasarkan bintang ------------");
+            case 2:
+                System.out.println("------------ Data bintang setelah sorting desc menggunakan bubble sort ------------");
+                hServ.bubbleSortBintang();
+                hServ.tampilAll();
+                System.out.println("------------ Data bintang setelah sorting desc menggunakan selection sort ------------");
                 hServ.selectionSortBintang();
                 hServ.tampilAll();
                 break;
@@ -57,3 +49,4 @@ public class MainHotel {
         }   
     }
 }
+

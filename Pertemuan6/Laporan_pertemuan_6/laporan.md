@@ -19,8 +19,7 @@ NIM     : 2341720162
 2. Di dalam method bubbleSort(), terdapat baris program seperti di bawah ini:
 <img src="soal2_5.2.3.png">
 Untuk apakah proses tersebut? <br>
-    Jawab: Proses ini digunakan untuk melakukan pengecekan nilai IPK pada elemen listMhs[j] dibandingkan dengan nilai IPK elemen sebelumnya listMhs[j-1]. Jika nilai IPK elemen listMhs[j] lebih besar dari listMhs[j-1] maka akan dilakukan swap yang dibantu variabel tmp sebagai penampung.
-<br>
+    Jawab: Proses ini digunakan untuk melakukan pengecekan nilai IPK pada elemen listMhs[j] dibandingkan dengan nilai IPK elemen sebelumnya listMhs[j-1]. Jika nilai IPK elemen listMhs[j] lebih besar dari listMhs[j-1] maka akan dilakukan swap yang dibantu variabel tmp sebagai penampung. <br>
 3. Perhatikan perulangan di dalam bubbleSort() di bawah ini:
 <img src="soal3_5.2.3.png">
 a. Apakah perbedaan antara kegunaan perulangan i dan perulangan j? <br>

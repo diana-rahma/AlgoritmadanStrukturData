@@ -15,6 +15,7 @@ Kelas   : TI - 1H
 1. Jelaskan fungsi break yang ada pada method FindSeqSearch!<br>
     **Jawab:** Fungsi break digunakan untuk menghenetikan perulangan jika data yang dicari sudah ditemukan.
 <br>
+2. 
 2. Jika Data Kode Buku yang dimasukkan tidak terurut dari kecil ke besar. Apakah program masih dapat berjalan? Apakah hasil yang dikeluarkan benar? Tunjukkan hasil screenshoot untuk bukti dengan kode Buku yang acak. Jelaskan Mengapa hal tersebut bisa terjadi?<br>
     **Jawab:** Program masih dapat berjalan, karena pada  sequiential search tidak memperhatikan urutan data. Data akan dicek mulai dari index ke-0 hingga index terakhir, jika terdapat data yang sesuai maka data ditemukan. 
 <br>

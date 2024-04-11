@@ -1,12 +1,10 @@
 package Pertemuan7;
 
-import Pertemuan2.Buku08;
-
 public class PencarianBuku08 {
-    Buku08 listBk[] = new Buku08[5];
+    Buku_08 listBk[] = new Buku_08[5];
     int idx;
 
-    void tambah(Buku08 m){
+    void tambah(Buku_08 m){
         if (idx < listBk.length){
             listBk[idx] = m;
             idx++;      
@@ -16,7 +14,7 @@ public class PencarianBuku08 {
     }
 
     void tampil(){
-        for(Buku08 m : listBk){
+        for(Buku_08 m : listBk){
             m.tampilDataBuku();
         }
     }
@@ -31,6 +29,29 @@ public class PencarianBuku08 {
         }
         return posisi;
     }
+
+    // soal pertanyaan
+    // public int FindBuku(int cari){
+    //     int posisi = -1;
+    //     for(int j = 0; j < listBk.length; j++){
+    //         if(listBk[j].kodeBuku == cari){
+    //             posisi = j;
+    //             break;
+    //         }
+    //     }
+    //     return posisi;
+    // }
+
+    // public BukuNoAbsen FindBuku(int cari) {
+    //     BukuNoAbsen dataBuku = null;
+    //     for (int j = 0; j < listBk.length; j++) {
+    //       if (listBk[j].kodeBuku == cari) {
+    //         dataBuku = listBk[j];
+    //         break;
+    //       }
+    //     }
+    //     return dataBuku;
+    //   }
 
     public void tampilPosisi(int x, int pos){
         if (pos != -1){
@@ -67,4 +88,41 @@ public class PencarianBuku08 {
         }
         return -1;
     }
+
+    // public String FindJudulSeq(String cari){
+        // String posisi = -1;
+        // for(int j = 0; j < listBk.length; j++){
+        //     if(listBk[j].kodeBuku == cari){
+        //         posisi = j;
+        //         break;
+        //     }
+        // }
+        // return posisi;
+    // }
+
+    public int FindSeqSearchStr(int cari){
+        int posisi = -1;
+        for(int j = 0; j < listBk.length; j++){
+            if(listBk[j].kodeBuku==cari){
+                posisi = j;
+                break;
+            }
+        }
+        return posisi;
+    }
+
+    // public String FindJudulBinary(String cari, String left, String right){
+        // String mid;
+        // if(right >= left){
+        //     mid = (left+right) / 2;
+        //     if (cari == listBk[mid].kodeBuku){
+        //         return (mid); 
+        //     } else if(listBk[mid].kodeBuku > cari) {
+        //         return FindBinarySearch(cari, left, mid-1);
+        //     } else {
+        //         return FindBinarySearch(cari, mid + 1, right);
+        //     }
+        // }
+        // return -1;
+    // }
 }

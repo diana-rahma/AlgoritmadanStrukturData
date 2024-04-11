@@ -15,20 +15,20 @@ public class BukuMain08 {
             System.out.println("-------------------");
             System.out.print("Kode Buku \t : ");
             int kodeBuku = s.nextInt();
-            System.out.print("Judul Buku \t : ");
-            String judulBuku = s1.nextLine();
+            System.out.println("Judul Buku \t : ");
+            String judulBuku = s1.next();
             System.out.print("Tahun Terbit \t : ");
             int tahunTerbit = s.nextInt();
-            System.out.print("Pengarang \t : ");
-            String pengarang = s1.nextLine();
-            System.out.print("Stock  \t : ");
+            System.out.println ("Pengarang \t : ");
+            String pengarang = s1.next();
+            System.out.print("Stock  \t\t : ");
             int stock = s.nextInt();
 
-            Buku08 m = new Buku08(kodeBuku, judulBuku, tahunTerbit, pengarang, stock);
+            Buku_08 m = new Buku_08(kodeBuku, judulBuku, tahunTerbit, pengarang, stock);
             data.tambah(m);
         }
         System.out.println("------------------------------");
-        System.out.println("Data keselururhan Mahasiswa : ");
+        System.out.println("Data keselururhan Buku : ");
         data.tampil();
 
         System.out.println("------------------------------");
@@ -40,15 +40,25 @@ public class BukuMain08 {
         System.out.println("Menggunakan sequential search");
         int posisi = data.FindSeqSearch(cari);
         data.tampilPosisi(cari, posisi);
+
         // 
-        data.TampilData(cari, posisi);
+        // data.TampilData(cari, posisi);
 
         // binary search
-        System.out.println("==============================");
-        System.out.println("Menggunakan binary search");
-        posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
-        data.tampilPosisi(cari, posisi);
-        data.TampilData(cari, posisi);
+        // System.out.println("==============================");
+        // System.out.println("Menggunakan binary search");
+        // posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
+        // data.tampilPosisi(cari, posisi);
+        // data.TampilData(cari, posisi);
+
+        // Buku_08 databuku = data.FindBuku(cari);
+        // databuku.tampilDataBuku();
+
+        // System.out.println("==============================");
+        // System.out.println("Menggunakan binary search string");
+        // posisi = data.FindSeqSearchStr(cari);
+        // data.tampilPosisi(cari, posisi);
+        // data.TampilData(cari, posisi);
     }
     
 }

@@ -11,16 +11,14 @@ Kelas   : TI - 1H
 <img src="seq2.png">
 <img src="hasilseq.png">
 
-#### 6.2.3 Pertanyaan 
+#### 6.2.3 Pertanyaan
 1. Jelaskan fungsi break yang ada pada method FindSeqSearch!<br>
-    **Jawab:** Fungsi break digunakan untuk menghenetikan perulangan jika data yang dicari sudah ditemukan.
-<br>
+**Jawab:** Fungsi break digunakan untuk menghenetikan perulangan jika data yang dicari sudah ditemukan.
 2. Jika Data Kode Buku yang dimasukkan tidak terurut dari kecil ke besar. Apakah program masih dapat berjalan? Apakah hasil yang dikeluarkan benar? Tunjukkan hasil screenshoot untuk bukti dengan kode Buku yang acak. Jelaskan Mengapa hal tersebut bisa terjadi?<br>
-    **Jawab:** Program masih dapat berjalan, karena pada  sequiential search tidak memperhatikan urutan data. Data akan dicek mulai dari index ke-0 hingga index terakhir, jika terdapat data yang sesuai maka data ditemukan. 
-<br>
-2. Buat method baru dengan nama FindBuku menggunakan konsep sequential search dengan tipe method dari FindBuku adalah BukuNoAbsen. Sehingga Anda bisa memanggil method tersebut pada class BukuMain seperti gambar berikut <br>
-    **Jawab:**
-<br>
+**Jawab:** Program masih dapat berjalan, karena pada  sequiential search tidak memperhatikan urutan data. Data akan dicek mulai dari index ke-0 hingga index terakhir, jika terdapat data yang sesuai maka data ditemukan.<br>
+3. Buat method baru dengan nama FindBuku menggunakan konsep sequential search dengan tipe method dari FindBuku adalah BukuNoAbsen. Sehingga Anda bisa memanggil method tersebut pada class BukuMain seperti gambar berikut <br>
+**Jawab:**
+
 
 ### 6.3. Searching / Pencarian Menggunakan Binary Search
 #### 6.3.3 Pertanyaan

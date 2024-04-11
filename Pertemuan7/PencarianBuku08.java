@@ -55,9 +55,9 @@ public class PencarianBuku08 {
 
     public void tampilPosisi(int x, int pos){
         if (pos != -1){
-            System.out.println("Data : "+ x +"ditemukan pada index " + pos);
+            System.out.println("Data : "+ x +" ditemukan pada index " + pos);
         } else {
-            System.out.println("Data "+ x + "tidak ditemukan");
+            System.out.println("Data "+ x + " tidak ditemukan");
         }
     }
 

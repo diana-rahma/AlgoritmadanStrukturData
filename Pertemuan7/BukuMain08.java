@@ -15,12 +15,12 @@ public class BukuMain08 {
             System.out.println("-------------------");
             System.out.print("Kode Buku \t : ");
             int kodeBuku = s.nextInt();
-            System.out.println("Judul Buku \t : ");
-            String judulBuku = s1.next();
+            System.out.print("Judul Buku \t : ");
+            String judulBuku = s1.nextLine();
             System.out.print("Tahun Terbit \t : ");
             int tahunTerbit = s.nextInt();
-            System.out.println ("Pengarang \t : ");
-            String pengarang = s1.next();
+            System.out.print ("Pengarang \t : ");
+            String pengarang = s1.nextLine();
             System.out.print("Stock  \t\t : ");
             int stock = s.nextInt();
 
@@ -28,7 +28,7 @@ public class BukuMain08 {
             data.tambah(m);
         }
         System.out.println("------------------------------");
-        System.out.println("Data keselururhan Buku : ");
+        System.out.println("Data keseluruhan Buku : ");
         data.tampil();
 
         System.out.println("------------------------------");

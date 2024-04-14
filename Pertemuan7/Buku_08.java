@@ -1,13 +1,13 @@
 package Pertemuan7;
 
 public class Buku_08 {
-    int kodeBuku;
+    String kodeBuku;
     String judulBuku;
     int tahunTerbit;
     String pengarang;
     int stock;
 
-    public Buku_08(int kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock){
+    public Buku_08(String kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock){
         this.kodeBuku = kodeBuku;
         this.judulBuku = judulBuku;
         this.tahunTerbit = tahunTerbit;
@@ -23,7 +23,6 @@ public class Buku_08 {
         System.out.println("Tahun terbit : "+tahunTerbit);
         System.out.println("Pengarang : "+pengarang);
         System.out.println("Stock : "+stock);
-    }
-    
+    } 
 }
 

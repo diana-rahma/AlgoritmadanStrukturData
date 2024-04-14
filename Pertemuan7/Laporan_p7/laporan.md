@@ -64,14 +64,14 @@ Tanda yang sebelumnya > diganti menjadi tanda < agar dapat mengurutkan data.
 ### 6.5 Latihan Praktikum
 1. Modifikasi percobaan searching diatas dengan ketentuan berikut ini 
 - Ubah tipe data dari kode Buku yang awalnya int menjadi String
-- Tambahkan method untuk pencarian kode Buku (bertipe data String) dengan menggunakan sequential search dan binary search.
+- Tambahkan method untuk pencarian kode Buku (bertipe data String) dengan menggunakan sequential search dan binary search.<br>
 <img src="latihan1_1.png"> <br>
 <img src="latihan1_2.png"> <br>
 <img src="latihan1_3.png"> <br>
 
 2. Modifikasi percobaan searching diatas dengan ketentuan berikut ini
 - Tambahkan method pencarian judul buku menggunakan sequential search dan binary search. Sebelum dilakukan searching dengan binary search data harus dilakukan pengurutan dengan menggunakan algoritma Sorting (bebas pilih algoritma sorting apapun)! Sehingga ketika input data acak, maka algoritma searching akan tetap berjalan.
-- Buat aturan untuk mendeteksi hasil pencarian judul buku yang lebih dari 1 hasil dalam bentuk kalimat peringatan! Pastikan algoritma yang diterapkan sesuai dengan kasus yang diberikan!
+- Buat aturan untuk mendeteksi hasil pencarian judul buku yang lebih dari 1 hasil dalam bentuk kalimat peringatan! Pastikan algoritma yang diterapkan sesuai dengan kasus yang diberikan! <br>
 <img src="latihan2_1.png"> <br>
 <img src="latihan2_2.png"> <br>
 <img src="latihan2_3.png"> <br>

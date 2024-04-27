@@ -68,6 +68,12 @@ public class Gudang08 {
         }
     }
 
+    public void peek(){
+        System.out.println("Barang teratas : "+tumpukan[top].kode);
+        System.out.println("Nama Barang: "+tumpukan[top].nama);
+        System.out.println("Kategori : "+ tumpukan[top].kategori);
+    }
+
     public String konversiDesimalKeBiner(int kode){
         StackKonversi08 stack = new StackKonversi08();
         while(kode > 0){

@@ -13,9 +13,19 @@ NIM     : 2341720162 <br>
 
 #### 2.1.3 Pertanyaan 
 1. Lakukan perbaikan pada kode program, sehingga keluaran yang dihasilkan sama dengan verifikasi hasil percobaan! Bagian mana saja yang perlu diperbaiki?<br>
+**Jawab:** Bagian yang perlu diperbaiki yaitu pada method lihatBarangTeratas pada kondisi pemilihan if. 
+<img src="perubahan1.png"><br>
+
 2. Berapa banyak data barang yang dapat ditampung di dalam tumpukan? Tunjukkan potongan kode programnya!<br>
+**Jawab:** Barang yang dapat ditampung yaitu 7,
+```java
+Gudang08 gudang = new Gudang08(7);
+```
 3. Mengapa perlu pengecekan kondisi !cekKosong() pada method tampilkanBarang? Kalau kondisi tersebut dihapus, apa dampaknya?<br>
+**Jawab:** Pengecekan kondisi !cekKosong berguna untuk memastikan bahwa tumpukan barang tidak kosong sebelum mencoba untuk menampilkan barangnya. Jika tumpukan barang kosong maka tidak ada yang perlu ditampilkan sehingga akan mencetak peringatan bahwa barang kosong.
+Jika kondisi tersebut dihapus maka akan menampilkan isi tumpukan barang tanpa pengecekan kosong atau tidaknya tumpukan barang. Dan jika tumpukan barang kosong maka bisa saja terjadi error NullPointerException.<br>
 4. Modifikasi kode program pada class Utama sehingga pengguna juga dapat memilih operasi lihat barang teratas, serta dapat secara bebas menentukan kapasitas gudang!<br>
+<img src="modif1.png">
 5. Commit dan push kode program ke Github<br>
 
 

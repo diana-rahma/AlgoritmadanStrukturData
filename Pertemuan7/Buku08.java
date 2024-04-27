@@ -1,3 +1,6 @@
+// TIDAK DIGUNAKAN / SALAH
+
+
 package Pertemuan7;
 import java.util.Scanner;
 

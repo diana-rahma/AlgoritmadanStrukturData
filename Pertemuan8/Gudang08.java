@@ -41,10 +41,12 @@ public class Gudang08 {
             Barang08 delete = tumpukan[top];
             top--;
             System.out.println("Barang "+delete.nama+" diambil dari Gudang");
+            System.out.println("Kode unik dalam biner: " + konversiDesimalKeBiner(delete.kode));
+            return delete;
         } else {
             System.out.println("Tumpukan barang kosong");
+            return null;
         }
-        return null;
     }
 
     public Barang08 lihatBarangTeratas(){
@@ -68,11 +70,36 @@ public class Gudang08 {
         }
     }
 
-    public void peek(){
-        System.out.println("Barang teratas : "+tumpukan[top].kode);
-        System.out.println("Nama Barang: "+tumpukan[top].nama);
-        System.out.println("Kategori : "+ tumpukan[top].kategori);
+    // public void peek(){
+    //     System.out.println("Barang teratas : "+tumpukan[top].kode);
+    //     System.out.println("Nama Barang: "+tumpukan[top].nama);
+    //     System.out.println("Kategori : "+ tumpukan[top].kategori);
+    // }
+
+    public Barang08 lihatBarangTerbawah(){
+        if(!cekKosong()){
+            Barang08 barangTerbawah = tumpukan[0];
+            System.out.println("Barang terbawah: "+barangTerbawah.nama);
+        } else {
+            System.out.println("Tumpukan barang kosong");
+        }
+        return null;
     }
+
+    public int cariBarang(String cari){
+        int posisi = -1;
+        for(int i = 0; i <= top; i++){
+            if(tumpukan[i].nama.equals(cari) || tumpukan[i].kode == Integer.parseInt(cari)){
+                posisi = i;
+                System.out.println("Data : "+ cari +" ditemukan pada index " + i);
+                break;
+            } else {
+                System.out.println("Data "+ cari + " tidak ditemukan");
+            }
+        }
+        return posisi;
+    }
+
 
     public String konversiDesimalKeBiner(int kode){
         StackKonversi08 stack = new StackKonversi08();
@@ -87,6 +114,19 @@ public class Gudang08 {
         }
         return biner;
     }
+
+    // public Barang08 ambilBarang08(){
+    //     if (!cekKosong()){
+    //         Barang08 delete = tumpukan[top];
+    //         top--;
+    //         System.out.println("Barang "+ delete.nama + " diambil dari gudang");
+    //         System.out.println("Kode unik dalam biner: " + konversiDesimalKeBiner(delete.kode));
+    //         return delete;
+    //     } else {
+    //         System.out.println("Tumpukan barang kosong");
+    //         return null;
+    //     }
+    // }
 
     
 }

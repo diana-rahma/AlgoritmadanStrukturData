@@ -38,18 +38,4 @@ public class StackKonversi08 {
             return data;
         }
     }
-
-    public Barang08 ambilBarang(){
-        if (!isFull()){
-            Barang08 delete = tumpukan[top];
-            top--;
-            System.out.println("Barang "+ delete.nama + " diambil dari gudang");
-            System.out.println("Kode unik dalam biner: " + konversiDesimalKeBiner(delete.kode));
-            return delete;
-        } else {
-            System.out.println("Tumpukan barang kosong");
-            return null;
-        }
-    }
-
 }

@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Utama08 {
     public static void main(String[] args) {
-        // Gudang08 gudang = new Gudang08(7);
         Scanner scanner = new Scanner(System.in);
         Scanner scanner1 = new Scanner(System.in);
 
@@ -16,7 +15,9 @@ public class Utama08 {
             System.out.println("2. Ambil barang");
             System.out.println("3. Tampilkan tumpukan barang");
             System.out.println("4. Lihat tumpukan teratas");
-            System.out.println("5. Keluar");
+            System.out.println("5. Lihat tumpukan terbawah");
+            System.out.println("6. Cari barang");
+            System.out.println("7. Keluar");
             System.out.print("Pilih Operasi: ");
             int pilihan = scanner.nextInt();
             scanner.nextLine();
@@ -43,10 +44,20 @@ public class Utama08 {
                     break;
 
                 case 4:
-                    gudang.peek();
+                    gudang.lihatBarangTeratas();
                     break;
 
                 case 5:
+                    gudang.lihatBarangTerbawah();
+                    break;
+
+                case 6:
+                    System.out.println("Masukkan nama/kode barang yang akan dicari");
+                    String cari = scanner.nextLine();
+                    gudang.cariBarang(cari);
+                    break;
+                
+                case 7:
                     break;
 
                 default:

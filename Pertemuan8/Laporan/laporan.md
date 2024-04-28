@@ -25,14 +25,27 @@ Gudang08 gudang = new Gudang08(7);
 **Jawab:** Pengecekan kondisi !cekKosong berguna untuk memastikan bahwa tumpukan barang tidak kosong sebelum mencoba untuk menampilkan barangnya. Jika tumpukan barang kosong maka tidak ada yang perlu ditampilkan sehingga akan mencetak peringatan bahwa barang kosong.
 Jika kondisi tersebut dihapus maka akan menampilkan isi tumpukan barang tanpa pengecekan kosong atau tidaknya tumpukan barang. Dan jika tumpukan barang kosong maka bisa saja terjadi error NullPointerException.<br>
 4. Modifikasi kode program pada class Utama sehingga pengguna juga dapat memilih operasi lihat barang teratas, serta dapat secara bebas menentukan kapasitas gudang!<br>
+- Main
+<img src="tambah_tumpukan.png">
+
+- Output
 <img src="modif1.png">
+<img src="modif2.png">
 5. Commit dan push kode program ke Github<br>
+<img src="github.png">
 
 
 
 ### 2.2  Konversi Kode Barang ke Biner 
 #### 2.2.2 Verifikasi Hasil Percobaan
+<img src="verifikasi2.png">
+
 #### 2.2.3 Pertanyaan
+1. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya!<br>
+**Jawab:** Hasilnya akan sama dengan sebelumnya. Alasannya karena kedua kondisi akan berhenti saat kode mencapai 0. Ketika kode = 0, maka semua digit desimal telah dikonversi menjadi biner. Karena dalam kedua kondisi, perulangan akan berhenti saat kode = 0, tidak ada perbedaan dalam hasilnya. Ketika menggunakan while (kode != 0), maka perulangan akan berhenti ketika kode mencapai 0 atau negatif. Tetapi, konversi desimal ke biner nilai negatif adalah nilai yang tidak relevan karena konversi hanya berlaku untuk bilangan bulat positif. Karena itu perubahan tersebut tidak akan memengaruhi hasil dari method konversiDesimalKeBiner.<br>
+2. Jelaskan alur kerja dari method konversiDesimalKeBiner!<br>
+**Jawab:** Variabel StackKonversi08 digunakan untuk menyimpan sementara digit biner. Perulangan pertama while(kode > 0) akan terus berjalan ketika kode lebih dari 0, perulangan ini berfungsi untuk mengonversi bilangan desimal menjadi bilangan biner dengan mengambil sisa pembagian dari kode dengan 2 pada setiap iterasi. Kemudian kode dibagi dengan 2 untuk memperoleh digit selanjutnya yang akan dikonversikan dan perulangan pertama pun berakhir.
+String biner digunakan untuk menyimpan hasil konversi, dan kemudain menjalankan perulangan kedua. Dimana while(!Stack.isEmpty()) akan berjalan sealam stack tidak kosong. Pada setiap iterasi digit biner akan disimpan dalam stack diambil menggunakan method pop dan ditambahkan ke string biner. Ketika digit biner telah ditambahkan ke dalam stack dengan urutan terbalik, pengambilan digit biner menggunakan method pop() akan menghasilkan digit biner dengan ukuran yang benar. Setelah semua digit biner diambil dari stack dan ditambahkan ke dalam string biner maka perulangan kedua berakhir. String biner yang berisi digit biner hasil konversi bilangan desimal ke biner yang diberikan, dikembalikan sebagai hasil konversi.
 
 ### 2.3 Percobaan 3: Konversi Notasi Infix ke Postfix
 #### 2.3.2 Verifikasi Hasil Percobaan
@@ -54,4 +67,26 @@ Setelah iterasi selesai, dan jika masih ada operator di dalam stack maka akan di
 
 
 ### 2.4 Latihan Praktikum
+Perhatikan dan gunakan kembali kode program pada Percobaan 1. Tambahkan dua method berikut pada class Gudang: 
+1. Method lihatBarangTerbawah digunakan untuk mengecek barang pada tumpukan terbawah<br>
+- Fungsi Barang
+<img src="fungsi_prak1.png">
 
+- Main
+<img src="main1_prak1.png">
+<img src="main2_prak1.png">
+
+- Output
+<img src="output_prak1.png">
+
+2. Method cariBarang digunakan untuk mencari ada atau tidaknya barang berdasarkan kode barangnya atau nama barangnya<br>
+- Fungsi cariBarang
+<img src="fungsi_latprak2.png">
+
+- Main
+<img src="main1_latprak2.png">
+<img src="main2_latprak2.png">
+
+- Output
+<img src="output1_latprak2.png">
+<img src="output2_latprak2.png">

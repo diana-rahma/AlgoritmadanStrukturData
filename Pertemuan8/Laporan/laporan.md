@@ -15,6 +15,9 @@ NIM     : 2341720162 <br>
 1. Lakukan perbaikan pada kode program, sehingga keluaran yang dihasilkan sama dengan verifikasi hasil percobaan! Bagian mana saja yang perlu diperbaiki?<br>
 **Jawab:** Bagian yang perlu diperbaiki yaitu pada method lihatBarangTeratas pada kondisi pemilihan if. 
 <img src="perubahan1.png"><br>
+Dan perubahan pada kondisi perulangan di method tampilkanBarang
+<img src="perubahan2.1.png">
+<img src="perubahan2.2.png">
 
 2. Berapa banyak data barang yang dapat ditampung di dalam tumpukan? Tunjukkan potongan kode programnya!<br>
 **Jawab:** Barang yang dapat ditampung yaitu 7,
@@ -44,8 +47,8 @@ Jika kondisi tersebut dihapus maka akan menampilkan isi tumpukan barang tanpa pe
 1. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya!<br>
 **Jawab:** Hasilnya akan sama dengan sebelumnya. Alasannya karena kedua kondisi akan berhenti saat kode mencapai 0. Ketika kode = 0, maka semua digit desimal telah dikonversi menjadi biner. Karena dalam kedua kondisi, perulangan akan berhenti saat kode = 0, tidak ada perbedaan dalam hasilnya. Ketika menggunakan while (kode != 0), maka perulangan akan berhenti ketika kode mencapai 0 atau negatif. Tetapi, konversi desimal ke biner nilai negatif adalah nilai yang tidak relevan karena konversi hanya berlaku untuk bilangan bulat positif. Karena itu perubahan tersebut tidak akan memengaruhi hasil dari method konversiDesimalKeBiner.<br>
 2. Jelaskan alur kerja dari method konversiDesimalKeBiner!<br>
-**Jawab:** Variabel StackKonversi08 digunakan untuk menyimpan sementara digit biner. Perulangan pertama while(kode > 0) akan terus berjalan ketika kode lebih dari 0, perulangan ini berfungsi untuk mengonversi bilangan desimal menjadi bilangan biner dengan mengambil sisa pembagian dari kode dengan 2 pada setiap iterasi. Kemudian kode dibagi dengan 2 untuk memperoleh digit selanjutnya yang akan dikonversikan dan perulangan pertama pun berakhir.
-String biner digunakan untuk menyimpan hasil konversi, dan kemudain menjalankan perulangan kedua. Dimana while(!Stack.isEmpty()) akan berjalan sealam stack tidak kosong. Pada setiap iterasi digit biner akan disimpan dalam stack diambil menggunakan method pop dan ditambahkan ke string biner. Ketika digit biner telah ditambahkan ke dalam stack dengan urutan terbalik, pengambilan digit biner menggunakan method pop() akan menghasilkan digit biner dengan ukuran yang benar. Setelah semua digit biner diambil dari stack dan ditambahkan ke dalam string biner maka perulangan kedua berakhir. String biner yang berisi digit biner hasil konversi bilangan desimal ke biner yang diberikan, dikembalikan sebagai hasil konversi.
+**Jawab:** Variabel StackKonversi08 digunakan untuk menyimpan sementara digit biner. Perulangan pertama while(kode > 0) akan terus berjalan ketika kode lebih dari 0, perulangan ini berfungsi untuk mengonversi bilangan desimal menjadi bilangan biner dengan mengambil sisa pembagian dari variabel kode dengan 2 pada setiap iterasi. Kemudian kode dibagi dengan 2 untuk memperoleh digit selanjutnya yang akan dikonversikan dan perulangan pertama pun berakhir.
+String biner digunakan untuk menyimpan hasil konversi, dan kemudian menjalankan perulangan kedua. Dimana while(!Stack.isEmpty()) akan berjalan selama stack tidak kosong. Pada setiap iterasi digit biner akan disimpan dalam stack diambil menggunakan method pop dan ditambahkan ke string biner. Ketika digit biner telah ditambahkan ke dalam stack dengan urutan terbalik, pengambilan digit biner menggunakan method pop() akan menghasilkan digit biner dengan ukuran yang benar. Setelah semua digit biner diambil dari stack dan ditambahkan ke dalam string biner maka perulangan kedua berakhir. String biner yang berisi digit biner hasil konversi bilangan desimal ke biner yang diberikan, dikembalikan sebagai hasil konversi.
 
 ### 2.3 Percobaan 3: Konversi Notasi Infix ke Postfix
 #### 2.3.2 Verifikasi Hasil Percobaan
@@ -61,7 +64,7 @@ String biner digunakan untuk menyimpan hasil konversi, dan kemudain menjalankan 
 - jika c adalah tanda kurung tutup ')', maka karakter dalam stack akan dipop dan ditambahkan ke dalam string p hingga tanda kurung buka yang kemudian akan dipop keluar dari stack.
 - jika c adalah operator, maka akan dilakukan pengecekan prioritas operator. Jika operatornya lebih tinggi dari operator yang berada di stack, maka operator akan dimasukkan ke dalam  stack. Dan jika tidak maka operator yang ada di stack dengan prioritas yag lebih tinggi atau sama akan dipop keluar dan ditambahkan ke dalam string p sampai operator pada stack lebih rendah dari operator c. setelah itu, operator c dimasukkan ke dalam stack menggunakan method push.
 Setelah iterasi selesai, dan jika masih ada operator di dalam stack maka akan dipop keluar dan ditambahkan ke dalam string p
-3. Pada method konversi, apa fungsi dari potongan kode berikut?<br>
+3. Pada method konversi, apa fungsi dari potongan kode berikut? ```java c = Q.charAt(i);```<br>
 **Jawab:** Ketika dilakukan perulangan sebanyak panjang dari string dikirimkan, fungsi kode tersebut adalah untuk mengambil setiap karakter yang ada pada string Q. Yang kemudian disimpan pada variable c dan akan dilakukan proses konversi.
 
 

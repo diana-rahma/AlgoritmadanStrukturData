@@ -2,7 +2,7 @@ package Pertemuan8;
 import java.util.Scanner;
 
 public class Utama08 {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         Scanner scanner = new Scanner(System.in);
         Scanner scanner1 = new Scanner(System.in);
 

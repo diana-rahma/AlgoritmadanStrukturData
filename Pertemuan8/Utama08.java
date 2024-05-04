@@ -52,7 +52,7 @@ public class Utama08 {
                     break;
 
                 case 6:
-                    System.out.println("Masukkan nama/kode barang yang akan dicari");
+                    System.out.println("Masukkan nama barang yang akan dicari");
                     String cari = scanner.nextLine();
                     gudang.cariBarang(cari);
                     break;

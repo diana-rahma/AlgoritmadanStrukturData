@@ -89,13 +89,14 @@ public class Gudang08 {
     public int cariBarang(String cari){
         int posisi = -1;
         for(int i = 0; i <= top; i++){
-            if(tumpukan[i].nama.equals(cari) || tumpukan[i].kode == Integer.parseInt(cari)){
+            if(tumpukan[i].nama.equals(cari)){
                 posisi = i;
                 System.out.println("Data : "+ cari +" ditemukan pada index " + i);
                 break;
-            } else {
-                System.out.println("Data "+ cari + " tidak ditemukan");
             }
+        }
+        if (posisi == -1) {
+            System.out.println("Data "+ cari + " tidak ditemukan");
         }
         return posisi;
     }

@@ -51,8 +51,6 @@ public class PembeliMain {
 
             }
         } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5 || pilih == 6);
-
-
     }
 
     public static void menu(){

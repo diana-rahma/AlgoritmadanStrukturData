@@ -13,7 +13,7 @@ Kelas   : TI - 1H
 1. Jelaskan perbedaan antara single linked list dengan double linked lists!<br>
 **Jawab:** Single Linked List hanya memilki 1 pointer yaitu next, sedangkan Double Linked LIst memilki 2 pointer yaitu prev dan next. <br>
 2. Perhatikan class Node, di dalamnya terdapat atribut next dan prev. Untuk apakah atribut tersebut? <br>
-**Jawab:**
+**Jawab:** Atribut next digunakan untuk menunjuk node berikutnya dalam linked list, sedangkan atribut prev digunakan iuntuk menunjuk node sebelumnya dalam linked list<br>
 3. Perhatikan konstruktor pada class DoubleLinkedLists. Apa kegunaan inisialisasi atribut head dan size seperti pada gambar berikut ini?<br>
 ```java
     public DoubleLinkedList(){
@@ -21,7 +21,8 @@ Kelas   : TI - 1H
         size = 0;
     }
 ```
-**Jawab:**
+**Jawab:** Inisialisasi atribut head digunakan untuk menunjukkan bahwa linked list tidak terisi node apapun, sehingga head diatur sebagai null. Sedangkan inisialisasi atribut size digunakan untuk menunjukkan bahwa linked list tidak memiliki elemen apapun, sehingga diatur menjadi 0.
+Dengan kata lain inisialisasi atribut head dan size ini digunakan untuk menunjukkan bahwa linked list masih kosong.<br>
 4. Pada method addFirst(), kenapa dalam pembuatan object dari konstruktor class Node prev dianggap sama dengan null?<br>
 ```java
     Node newNode = new Node(null, item, head);
@@ -62,7 +63,7 @@ jelaskan maksud dari bagian yang ditandai dengan kotak kuning.<br>
     current.prev.next = current.next;
     current.next.prev = current.prev;
 ```
-**Jawab:** Kode program tersebut berfungsi untuk mengatur pointer next dari node yang sebelumnya menjadi node setelah node yang akan dihapus. Dan mengatur pointer prev dari node setelahnya menjadi node sebelum node yang akan dihapus. 
+**Jawab:** Kode program tersebut berfungsi untuk mengatur pointer next dari node yang sebelumnya menjadi next setelah node yang akan dihapus. Dan mengatur menggati prev dari node setelahnya menjadi prev sebelum node yang akan dihapus, Sehingga node yang sekarang terhapus.
 
 ### 12.4 Kegiatan Praktikum 3
 #### 12.4.2 Verifikasi Hasil Percobaan

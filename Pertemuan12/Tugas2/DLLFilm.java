@@ -1,10 +1,12 @@
-package Pertemuan12;
+package Pertemuan12.Tugas2;
 
-public class DoubleLinkedList {
+import Pertemuan7.Buku_08;
+
+public class DLLFilm {
     Node head;
     int size;
 
-    public DoubleLinkedList(){
+    public DLLFilm(){
         head = null;
         size = 0;
     }
@@ -13,7 +15,7 @@ public class DoubleLinkedList {
         return head == null;
     }
 
-    public void addFirst(int item){
+    public void addFirst(Film item){
         if(isEmpty()){
             head = new Node(null, item, null);
         } else {
@@ -24,7 +26,7 @@ public class DoubleLinkedList {
         size++;
     }
 
-    public void addLast(int item){
+    public void addLast(Film item){
         if(isEmpty()){
             addFirst(item);
         } else {
@@ -38,7 +40,7 @@ public class DoubleLinkedList {
         }
     }
 
-    public void add(int item, int index) throws Exception {
+    public void add(Film item, int index) throws Exception {
         if (isEmpty()) {
             addFirst(item);
         } else if (index < 0 || index > size) {
@@ -65,29 +67,21 @@ public class DoubleLinkedList {
         size++;
     }
 
-    public int size(){
-        return size;
-    }
-
-    public void clear(){
-        head = null;
-        size = 0;
-    }
-
     public void print(){
         if(!isEmpty()){
             Node tmp = head;
+            System.out.println("Cetak Data");
             while(tmp != null){
-                System.out.print(tmp.data + "\t");
+                System.out.println("ID : " + tmp.data.id);
+                System.out.println("  Judul Node : " + tmp.data.judul);
+                System.out.println("  Rating : " + tmp.data.rate);
                 tmp = tmp.next;
             }
-            System.out.println("\nberhasil diisi");
         } else {
             System.out.println("Linked List Kosong");
         }
     }
 
-    // Percobaan 2
     public void removeFirst() throws Exception{
         if(isEmpty()){
             throw new Exception("Linked list masih kosong, tidak dapat dihapus");
@@ -142,32 +136,40 @@ public class DoubleLinkedList {
         }
     }
 
-    public int getFirst() throws Exception{
-        if(isEmpty()){
-            throw new Exception("LInked List kosong");
+    public void cariId(int index) {
+        Node current = head;
+        int i = 0;
+        while(current.next != null){
+            if(current.data.id == index){
+                break;
+            }
+            current = current.next;
+            i++;
         }
-        return head.data;
+        System.out.println("Data id Film: "+index+ " berada di node ke-" +i);
+        System.out.println("IDENTITAS");
+        System.out.println("ID Film: "+index);
+        System.out.println("Judul Film: "+current.data.judul);
+        System.out.println("IMDB Rating: "+ current.data.rate);
     }
 
-    public int getLast() throws Exception{
-        if(isEmpty()){
-            throw new Exception("LInked List kosong");
-        } 
-        Node tmp = head;
-        while (tmp.next != null){
-            tmp = tmp.next;
+    public void bubbleSortRating(){
+        Node current = null, index = null;
+        Film temp;
+        if(head == null){
+            System.out.println("Linked list masih kosong");
+            return;
+        } else {
+            for(current = head; current.next != null; current = current.next){
+                for(index = current.next; index != null; index = index.next){
+                    if(current.data.rate < index.data.rate){
+                        temp = current.data;
+                        current.data = index.data;
+                        index.data = temp;
+                    }
+                }
+            }
         }
-        return tmp.data;
-    }
-
-    public int get(int index) throws Exception{
-        if(isEmpty() || index >= size){
-            throw new Exception("LInked List kosong");
-        } 
-        Node tmp = head;
-        for(int i = 0; i < index; i++){
-            tmp = tmp.next;
-        }
-        return tmp.data;
+        
     }
 }

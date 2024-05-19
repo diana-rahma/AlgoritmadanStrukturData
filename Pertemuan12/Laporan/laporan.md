@@ -27,15 +27,18 @@ Dengan kata lain inisialisasi atribut head dan size ini digunakan untuk menunjuk
 ```java
     Node newNode = new Node(null, item, head);
 ```
-**Jawab:**
+**Jawab:** Karena ketika menambahkan node baru di awal, maka node tersebut akan menjadi node pertama dan tidak memilki node sebelumnya. Sehingga atribut prev diatur sebagai null.<br>
 5. Perhatikan pada method addFirst(). Apakah arti statement head.prev = newNode ? <br>
-**Jawab:**
-6. Perhatikan isi method addLast(), apa arti dari pembuatan object Node dengan mengisikan parameter prev dengan current, dan next dengan null?<br>
-**Jawab:**
+**Jawab:** Digunakan untuk membuat node baru sebelum dari head yang sekarang, kemudian data baru tersebut menjadi head yang baru
+6. Perhatikan isi method addLast(), apa arti dari pembuatan object Node dengan mengisikan parameter prev dengan current, dan next dengan null?
+```java
+    Node newNode = new Node(current, item, null);
+```
+**Jawab:** Pembuatan Object tersebut berarti bahwa node baru yang ditambahkan akan menjadi node terakhir di linked list. Parameter prev yang diganti dengan current menunjuk ke node terakhir sebelumnya. dan next diisi dengan null menunjukkan bahwa ini adalah node terakhir.
 7. Pada method add(), terdapat potongan kode program sebagai berikut
 
 jelaskan maksud dari bagian yang ditandai dengan kotak kuning.<br>
-**Jawab:**
+**Jawab:** Maksud dari kode program tersebut digunakan untuk menambah node di awal linked list. Pada pemilihan if dengan kondisi (current.prev == null) jika current adalah head, maka node baru akan dibuat dengan prev = null, kemudian menjadikan current.prev ke node baru dan yang terakhir mengupdate head ke node baru.
 
 ### 12.3 Kegiatan Praktikum 2
 #### 12.3.2 Verifikasi Hasil Percobaan
@@ -71,24 +74,43 @@ jelaskan maksud dari bagian yang ditandai dengan kotak kuning.<br>
 
 #### 12.4.3 Pertanyaan Percobaan
 1. Jelaskan method **size()** pada class DoubleLinkedLists!<br>
-**Jawab:**
+**Jawab:** Method ini digunakan untuk mereturn ukuran/jumlah dari elemen linked list.
 2. Jelaskan cara mengatur indeks pada double linked lists supaya dapat dimulai dari indeks ke-1!<br>
-**Jawab:**
+**Jawab:** Dengan cara mengganti size = 0 menjadi size = 1;
 3. Jelaskan perbedaan karakteristik fungsi **Add** pada Double Linked Lists dan Single Linked Lists!<br>
-**Jawab:**
+**Jawab:** Jika pada single linked list hanya bisa mengirimkan parameter data dan next node saja sedangkan pada double linked list mengirimkan data beserta node next dan prev nya.
 4. Jelaskan perbedaan logika dari kedua kode program di bawah ini!<br> 
-**Jawab:**
-
+**Jawab:** Pada kode program (a) method ini memeriksa nilai atribut dari size jika size adalah 0 berarti size tidak memiliki elemen apapun sehingga mengembalikan nilai true dan jika size lebih dari 0 berarti terdapat beberapa elemen dalam size sehingga mengembalikan nilai false.
+Sedangkan pada kode program (b) method ini memeriksa apakah head bernilai null, jika iya maka mengembalikan nilai true dan jika tidak akan mengembalikan nilai false. 
 
 ### 12.5 Tugas Praktikum
 1. Buat program antrian vaksinasi menggunakan queue berbasis double linked list sesuai ilustrasi dan menu di bawah ini! **(counter jumlah antrian tersisa di menu cetak(3) dan data orang yang telah divaksinasi di menu Hapus Data(2) harus ada) Contoh Ilustrasi Program**
 Menu Awal dan Penambahan Data<br>
 Cetak Data **(Komponen di area merah harus ada)**<br>
 Hapus Data **(Komponen di area merah harus ada)**<br>
+**Jawab:** 
+- Output : <br>
+<img src="tugas1_1.png"> <br>
+<img src="tugas1_2.png"> <br>
+<img src="tugas1_3.png"> <br>
+
 2. Buatlah program daftar film yang terdiri dari id, judul dan rating menggunakan double linked lists, bentuk program memiliki fitur pencarian melalui ID Film dan pengurutan Rating secara descending. Class Film wajib diimplementasikan dalam soal ini. 
 **Contoh Ilustrasi Program**
 Menu Awal dan Penambahan Data<br>
 Cetak Data<br>
 Pencarian Data<br>
+**Jawab:**
+- Output
+<img src="tugas2_1.png"><br>
+<img src="tugas2_2.png"><br>
+<img src="tugas2_3.png"><br>
+<img src="tugas2_4.png"><br>
+<img src="tugas2_5.png"><br>
+<img src="tugas2_6.png"><br>
+<img src="tugas2_7.png"><br>
+<img src="tugas2_8.png"><br>
+<img src="tugas2_9.png"><br>
+<img src="tugas2_10.png"><br>
+<img src="tugas2_11.png">
 
 

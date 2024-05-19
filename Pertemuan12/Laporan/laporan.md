@@ -23,7 +23,7 @@ Kelas   : TI - 1H
 ```
 **Jawab:** Inisialisasi atribut head digunakan untuk menunjukkan bahwa linked list tidak terisi node apapun, sehingga head diatur sebagai null. Sedangkan inisialisasi atribut size digunakan untuk menunjukkan bahwa linked list tidak memiliki elemen apapun, sehingga diatur menjadi 0.
 Dengan kata lain inisialisasi atribut head dan size ini digunakan untuk menunjukkan bahwa linked list masih kosong.<br>
-4. Pada method addFirst(), kenapa dalam pembuatan object dari konstruktor class Node prev dianggap sama dengan null?<br>
+4. Pada method addFirst(), kenapa dalam pembuatan object dari konstruktor class Node prev dianggap sama dengan null?
 ```java
     Node newNode = new Node(null, item, head);
 ```

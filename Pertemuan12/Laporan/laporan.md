@@ -14,7 +14,7 @@ Kelas   : TI - 1H
 **Jawab:** Single Linked List hanya memilki 1 pointer yaitu next, sedangkan Double Linked LIst memilki 2 pointer yaitu prev dan next. <br>
 2. Perhatikan class Node, di dalamnya terdapat atribut next dan prev. Untuk apakah atribut tersebut? <br>
 **Jawab:** Atribut next digunakan untuk menunjuk node berikutnya dalam linked list, sedangkan atribut prev digunakan iuntuk menunjuk node sebelumnya dalam linked list<br>
-3. Perhatikan konstruktor pada class DoubleLinkedLists. Apa kegunaan inisialisasi atribut head dan size seperti pada gambar berikut ini?<br>
+3. Perhatikan konstruktor pada class DoubleLinkedLists. Apa kegunaan inisialisasi atribut head dan size seperti pada gambar berikut ini?
 ```java
     public DoubleLinkedList(){
         head = null;
@@ -34,7 +34,7 @@ Dengan kata lain inisialisasi atribut head dan size ini digunakan untuk menunjuk
 ```java
     Node newNode = new Node(current, item, null);
 ```
-**Jawab:** Pembuatan Object tersebut berarti bahwa node baru yang ditambahkan akan menjadi node terakhir di linked list. Parameter prev yang diganti dengan current menunjuk ke node terakhir sebelumnya. dan next diisi dengan null menunjukkan bahwa ini adalah node terakhir.
+**Jawab:** Pembuatan Object tersebut berarti bahwa node baru yang ditambahkan akan menjadi node terakhir di linked list. Parameter prev yang diganti dengan current menunjuk ke node terakhir sebelumnya. dan next diisi dengan null menunjukkan bahwa ini adalah node terakhir.<br>
 7. Pada method add(), terdapat potongan kode program sebagai berikut
 
 jelaskan maksud dari bagian yang ditandai dengan kotak kuning.<br>
@@ -53,7 +53,7 @@ jelaskan maksud dari bagian yang ditandai dengan kotak kuning.<br>
 **Jawab:** Statement diatas digunakan untuk mengubah head yang sekarang menjadi head yang selanjutnya, sehingga head yang sekarang akan hilang.<br>
 2. Bagaimana cara mendeteksi posisi data ada pada bagian akhir pada method **removeLast()**?<br>
 **Jawab:** Posisi data pada bagian akhir dideteksi dengan menggunakan perulangan while untuk menelusuri linked list sampai ke node terakhir.<br>
-3. Jelaskan alasan potongan kode program di bawah ini tidak cocok untuk perintah remove!<br>
+3. Jelaskan alasan potongan kode program di bawah ini tidak cocok untuk perintah remove!
 ```java
     Node tmp = head.next;
 
@@ -61,7 +61,7 @@ jelaskan maksud dari bagian yang ditandai dengan kotak kuning.<br>
     tmp.next.prev = head;
 ```
 **Jawab:** Kode program tersebut tidak cocok untuk perintah remove dikarenakan kode tersbut mencoba untuk menghapus node dari linked list tanpa memeriksa node yang akan dihapus, apakah node yang dihapus adalah node pertama atau bukan. Hal ini dapat menyebabkan kehilangan referensi ke node yang dihapus.<br>
-4. Jelaskan fungsi kode program berikut ini pada fungsi remove!<br>
+4. Jelaskan fungsi kode program berikut ini pada fungsi remove!
 ```java
     current.prev.next = current.next;
     current.next.prev = current.prev;

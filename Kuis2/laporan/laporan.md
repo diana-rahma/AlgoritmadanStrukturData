@@ -6,6 +6,6 @@ Kelas : TI - 1H <br>
 NIM : 2341720162<br>
 
 ### Tema IBL
--Output
+-Output <br>
 <img src="output1.png"><br>
 <img src="output2.png"><br>

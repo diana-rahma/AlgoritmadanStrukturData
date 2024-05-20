@@ -78,7 +78,7 @@ class DLL {
         if(!isEmpty()){
             Node tmp = head;
             while(tmp != null){
-                System.out.print("Team: "+tmp.data.team + ", "+ tmp.data.win +", "+tmp.data.lose);
+                System.out.print("Team: "+tmp.data.team + ", "+ tmp.data.win +", "+tmp.data.lose + "\n");
                 tmp = tmp.next;
             }
             // System.out.println("\nberhasil diisi");
@@ -145,7 +145,7 @@ class DLL {
             case 13:
                 return "Borneo Hornbills vs Tangerang Hawks Basketball Club";
             case 14:
-                return "Pelita Jaya Bakrie Jakarta vs Satria Muda Pertamina Jakarta";
+                return "Pelita Jaya Jakarta vs Satria Muda Pertamina Jakarta";
             case 15:
                 return "Satya Wacana Salatiga vs Amartha Hangtuah Jakarta";
             default:

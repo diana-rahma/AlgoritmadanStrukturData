@@ -111,8 +111,8 @@ class DLL {
     // }
 
     class Poin {
-        public static final int MENANG = 3;
-        public static final int MENANG_OT = 2;
+        public static final int MENANG = 2;
+        public static final int MENANG_OT = 1;
         public static final int KALAH = 0;
     }
 

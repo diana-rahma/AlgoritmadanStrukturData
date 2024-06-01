@@ -59,6 +59,4 @@ public class DoubleLinkedListMain {
         System.out.println("Data indeks ke-1 pada LInked Lists adalah: "+dll.get(1));
 
     }
-
-    
 }

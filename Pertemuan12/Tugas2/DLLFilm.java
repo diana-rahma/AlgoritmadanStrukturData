@@ -1,7 +1,5 @@
 package Pertemuan12.Tugas2;
 
-import Pertemuan7.Buku_08;
-
 public class DLLFilm {
     Node head;
     int size;
@@ -170,6 +168,5 @@ public class DLLFilm {
                 }
             }
         }
-        
     }
 }

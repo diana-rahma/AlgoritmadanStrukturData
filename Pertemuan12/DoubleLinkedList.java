@@ -26,7 +26,7 @@ public class DoubleLinkedList {
 
     public void addLast(int item){
         if(isEmpty()){
-            addFirst(item);
+            head = new Node(null, item, null);
         } else {
             Node current = head;
             while(current.next != null){

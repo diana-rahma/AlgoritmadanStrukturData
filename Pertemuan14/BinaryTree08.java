@@ -170,9 +170,68 @@ public class BinaryTree08 {
     }
 
     // Tugas praktikum 1
-    
-    
+    void tambahRekursif(int data) {
+        root = addRecursive(root, data);
+    }
+
+    public Node08 addRecursive(Node08 current, int data) {
+        if (isEmpty()) {
+            root = new Node08(data);
+        }else if (current == null) {
+            return new Node08(data);
+        } else if (data < current.data) {
+            current.left = addRecursive(current.left, data);
+        } else if (data > current.data) {
+            current.right = addRecursive(current.right, data);
+        } else {
+            return current;
+        }
+        return current;
+    }
+
+    // Tugas Praktikum 2
+    void getMin(Node08 node){
+        if(node.left != null){
+            getMin(node.left);
+        } else {
+            System.out.println("Nilai terkecil : "+node.data);
+        }
+    }
+
+    void getMax(Node08 node){
+        if(node.right != null){
+            getMax(node.right);
+        } else {
+            System.out.println("Nilai terbesar : "+node.data);
+        }
+    }
 
 
+    // Tugas praktikum 3
+    void tampilkanLeaf(Node08 node){
+        if(node != null){
+            if(node.left != null && node.right != null){
+                tampilkanLeaf(node.left);
+                tampilkanLeaf(node.right);
+            } else if (node.left != null) {
+                tampilkanLeaf(node.left);
+            } else if (node.right != null) {
+                tampilkanLeaf(node.right);
+            } else {
+                System.out.println(node.data + " ");
+            }
+        }
+    }
 
+    // Tugas praktikum 4
+    int hitungLeaf(Node08 node){
+        if(node == null){
+            return 0;
+        }
+        if(node.left == null && node.right == null){
+            return 1;
+        } else {
+            return hitungLeaf(node.left) + hitungLeaf(node.right);
+        }
+    }
 }

@@ -5,9 +5,14 @@ public class BinaryTreeArrayMain08 {
         BinaryTreeArray08 bta = new BinaryTreeArray08();
         int[] data = {6,4,8,3,5,7,9,0,0,0};
         int idxLast = 6;
+
         bta.populateDate(data, idxLast);
-        System.out.print("\nInOrder Traversal : ");
+        bta.add(2);
+        bta.traversePreOrder(0);
+        System.out.print("\n");
         bta.traverseInOrder(0);
         System.out.print("\n");
+        bta.traversePostOrder(0);
+        System.out.print(" ");
     }
 }
